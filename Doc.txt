@@ -1,0 +1,13 @@
+Build your own Load Balancer
+Install dependencies npm install 1) express 2) request 3) Nodemon
+
+Step 1 and 2
+	-: Create a basic server which will be a load balancer serving on port 5000
+	-: Create backend servers which will serve on port 8080,8081,8082
+	-: Create a middleware which will send requests using a tunnel pipe also make ServerIndex
+	-: Implement Round Robin algorithm Find and store the active servers
+	
+Step 3 
+ 	-: Do health check using interval of 5 Seconds
+ 	-: modify backend servers for a health check api /health
+ 	-: Send request to that api every 5 seconds
